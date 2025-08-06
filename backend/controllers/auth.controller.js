@@ -93,7 +93,7 @@ export const login = async (req, res, next) => {
                 message: "Loggin successfully"
             });
         } else {
-            throw new ErrorHandler('Invalid email or password', 401);
+            throw new ErrorHandler('Invalid email or password', 400);
         }
 
     } catch (error) {
